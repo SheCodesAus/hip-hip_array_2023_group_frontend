@@ -4,7 +4,7 @@ import "./LoginForm.css";
 
 function LoginForm() {
     const [ credentials, setCredentials ] = useState({
-        email: '',
+        username: '',
         password: '',
     }); 
     
@@ -54,7 +54,7 @@ const postData = async () => {
                             </div>
                             <div className="login-4a">
                                 <label htmlFor='email'>Email:</label>
-                                <input onChange={handleChange} type="text" id='email' placeholder='Enter username'></input>
+                                <input onChange={handleChange} type="text" id='username' placeholder='Enter username'></input>
                             </div>
             
                             <div className="login-4a">

@@ -6,7 +6,7 @@ function NewUserForm() {
     const [ FormData, setFormData ] = useState({
         first_name: '',
         last_name: '', 
-        email: '',
+        username: '',
         password: '',
         is_python_mentor: false,
         is_django_mentor: false,
@@ -80,7 +80,7 @@ const postData = async () => {
                             </div>
                              <div className="new-workshop-4a">
                                 <label htmlFor='Email'>Email:</label>
-                                <input onChange={handleChange} type="text" id='email' placeholder='Enter email'></input>
+                                <input onChange={handleChange} type="text" id='username' placeholder='Enter email'></input>
                             </div>
                             <div className="new-workshop-4a">
                                 <label htmlFor='password'>Password:</label>
