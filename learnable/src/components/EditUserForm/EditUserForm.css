@@ -1,0 +1,130 @@
+.new-proj-3{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  
+  
+  .new-workshop-3b{
+      /* padding: 30px; */
+      margin: 10px;
+      justify-items: center;
+      color: #1e1243;
+      text-align: center;
+      margin-bottom: 0;
+  }
+  
+  .new-workshop-3b p{
+      color: #1e1243;
+  }
+  
+  
+  
+  .new-workshop-1{
+      margin-top: 50px;
+      justify-content: center;
+      align-items: center;
+      background-color: #b6a9d2;
+      width: 100%;
+      /* height: 600px; */
+      padding: 10px;
+    
+    }
+    
+    .new-workshop-1b{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .new-workshop-2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      width: 700px;
+      height: 480px;
+      margin: 30px;
+      padding: 20px;
+      
+    }
+  
+    .new-workshop-4a{
+      display: flex;
+      width: 420px;
+      justify-content: right;
+      /* color: rgb(171, 222, 151); */
+      /* padding-right: 30px; */
+      margin: 5px;
+      
+    }
+  
+    .new-workshop-4a label{
+      padding-right: 20px;
+      
+    }
+    
+    .new-workshop-4a input{
+      text-align: left;
+      border: none;
+      background-color: rgb(232, 239, 239);
+      padding: 5px;
+      justify-content: right;
+      width: 250px;
+  
+    }
+   
+    .checkboxes label{
+      display: block;
+      padding-right: 10px;
+      padding-left: 22px;
+      text-indent: -22px;
+    }
+
+    .checkboxes input{
+      vertical-align: middle;
+    }
+
+    .checkboxes label span {
+      vertical-align: middle;
+    }
+
+    .new-workshop-4b{
+      display: flex;
+      width: 420px;
+      justify-content: right;
+      margin: 5px;
+      
+    }
+  
+    .new-workshop-4b label{
+      margin: 5px;
+      
+    }
+    
+    .checkboxes{
+      justify-content: left;
+      text-align: left;
+      width: 200px;
+      margin-left: 65px;
+    }
+    
+  
+    
+    .btn-4{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      color: #fff;
+      background-color: #1e1243;
+      border-radius: 10px;
+  
+    }
+    
+    .new-workshop-4g{
+  
+      text-align: center;
+    }
