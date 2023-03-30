@@ -6,7 +6,7 @@ function Workshops(){
 const [ workshopList, setWorkshopList ] = useState([]);
 
 useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}workshops/`)
+    fetch(`${import.meta.env.VITE_API_URL}workshops`)
     .then((results) => {
         return results.json();
     })
