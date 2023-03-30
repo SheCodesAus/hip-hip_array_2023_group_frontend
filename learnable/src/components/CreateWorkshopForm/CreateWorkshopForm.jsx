@@ -11,10 +11,13 @@ function NewWorkshopForm() {
         is_javascript_mentor: false,
         is_htmlcss_mentor: false,
         workshop_date: '',
+        created_at: '',
         description: '',
         image: '',
         is_open: true,
-        max_mentor_num: ''
+        max_mentor_num: '',
+        owner: '',
+        mentor_count: '',
         
     }); 
     const navigate = useNavigate();
@@ -60,7 +63,7 @@ const postData = async () => {
             "Authorization": `token ${token}`,
         },
     });
-    return response.json();
+    return response.json(FormData);
     };
 
 

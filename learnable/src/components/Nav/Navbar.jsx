@@ -19,7 +19,7 @@ function Nav() {
         loginStuff = (<div>
             <div className="nav-btns">
             <Link to="/login">Login</Link>
-            <button className="btn-1"><Link to="/createanaccount">Create an account</Link></button>
+            <button className="btn-1"><Link to="/createaccount">Create an account</Link></button>
             </div>
             
         </div>)

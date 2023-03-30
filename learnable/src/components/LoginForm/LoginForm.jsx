@@ -4,7 +4,7 @@ import "./LoginForm.css";
 
 function LoginForm() {
     const [ credentials, setCredentials ] = useState({
-        email: '',
+        username: '',
         password: '',
     }); 
     
@@ -20,7 +20,7 @@ function LoginForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (credentials.email && credentials.password) {
+        if (credentials.username && credentials.password) {
             postData().then((response) => {
             window.localStorage.setItem("token", response.token);
             navigate("/");
@@ -52,8 +52,8 @@ const postData = async () => {
                                 <h3>My Login Details</h3>
                             </div>
                             <div className="login-4a">
-                                <label htmlFor='email'>Email:</label>
-                                <input onChange={handleChange} type="text" id='email' placeholder='Enter username'></input>
+                                <label htmlFor='username'>Email:</label>
+                                <input onChange={handleChange} type="username" id='username' placeholder='Enter email'></input>
                             </div>
             
                             <div className="login-4a">
