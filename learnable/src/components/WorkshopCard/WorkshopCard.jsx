@@ -6,7 +6,7 @@ function WorkshopCard(props) {
     const { workshopData } = props;
     return (
         <div className='all-workshops-1'>
-            <Link to={`/project/${workshopData.id}`}>
+            <Link to={`/workshop/${workshopData.id}`}>
                 <div className='all-workshops-1a'>
                     <div>
                         <img src={workshopData.image}/>

@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-// import WorkshopCard from "../components/WorkshopCard";
+import WorkshopCard from "../components/WorkshopCard/WorkshopCard";
 
 function Workshops(){
 const [ workshopList, setWorkshopList ] = useState([]);

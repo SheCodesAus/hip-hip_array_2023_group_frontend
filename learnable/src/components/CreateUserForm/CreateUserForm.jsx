@@ -39,8 +39,8 @@ function NewUserForm() {
         event.preventDefault();
 
             postData().then((response) => {
-            console.log(response)
             navigate(`/login`);
+            console.log(response)
 
             });
 
@@ -80,7 +80,7 @@ const postData = async () => {
                             </div>
                              <div className="new-workshop-4a">
                                 <label htmlFor='Email'>Email:</label>
-                                <input onChange={handleChange} type="text" id='username' placeholder='Enter email'></input>
+                                <input onChange={handleChange} type="username" id='username' placeholder='Enter email'></input>
                             </div>
                             <div className="new-workshop-4a">
                                 <label htmlFor='password'>Password:</label>
