@@ -45,22 +45,29 @@ function NewWorkshopForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
+        const token = window.localStorage.getItem("token");
+        if(token) {
             postData().then((response) => {
-            navigate(`/workshops/${response.id}`);
+                navigate(`/workshops/${response.id}`);
             });
+        } else {
+            alert("You must be logged in!");
+            navigate(`/login`);
+        }
+
 
     };
 
-const postData = async () => {
-    const token = window.localStorage.getItem("token");
-    const response = await fetch(`${import.meta.env.VITE_API_URL}workshops/`, {
-        method: "post",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `token ${token}`,
-        },
-    });
-    return response.json();
+    const postData = async () => {
+        const token = window.localStorage.getItem("token");
+        const response = await fetch(`${import.meta.env.VITE_API_URL}workshops/`, {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Token ${token}`,
+            },
+        });
+        return response.json();
     };
 
 
