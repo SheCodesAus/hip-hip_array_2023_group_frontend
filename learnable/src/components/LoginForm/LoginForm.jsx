@@ -53,7 +53,7 @@ const postData = async () => {
                             </div>
                             <div className="login-4a">
                                 <label htmlFor='username'>Email:</label>
-                                <input onChange={handleChange} type="username" id='username' placeholder='Enter email'></input>
+                                <input onChange={handleChange} type="text" id='username' placeholder='Enter email'></input>
                             </div>
             
                             <div className="login-4a">
